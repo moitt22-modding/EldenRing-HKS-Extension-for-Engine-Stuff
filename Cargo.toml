@@ -1,0 +1,17 @@
+[package]
+name = "hks-extender"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+retour = { version = "0.3", features = ["static-detour"] }
+pelite = "0.10.0"
+eldenring = "0.11.0"
+eldenring-util = "0.11.0"
+fromsoftware-shared = "0.11.0"
+
+[patch.crates-io]
+pelite = { git = "https://github.com/CasualX/pelite.git" }
